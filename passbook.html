@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Passbook</title>
+    <script src="passbook.js" defer></script>
+    <style>
+        nav {
+            background-color: blanchedalmond;
+        }
+        
+        #cashBal {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="passbook.html">Home</a>
+        <a href="reset_password.html">Reset Password</a>
+    </nav>
+    <h1>My passbook</h1>
+
+    <h3 id="cashBalHeading">Current balance is $ <span id="cashBal"></span></h3>
+    <div>
+        <p>What would you like to do today?</p>
+        <input type="button" id="depositBtn" value="Deposit" onclick="deposit()">
+        <input type="button" id="withdrawalBtn" value="Withdrawal" onclick="withdraw()"><br>
+        <input type="text" id="amount" placeholder="Please input the amount.">
+        <p>to / from my balance.</p>
+        <select name="withdrawCat">
+            <option value="Necesscity">Necesscity</option>
+            <option value="play">Play</option>
+            <option value="gift">Gift</option>
+            <option value="donation">Donation</option>
+
+        </select>
+        <input type="text" id="description" placeholder="Please write down the details for review">
+    </div>
+
+</body>
+
+</html>
